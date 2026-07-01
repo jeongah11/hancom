@@ -1,0 +1,12 @@
+/* 기본 - 페이지 전체(가장 넓음) */
+body {background-color: beige; font-family: Gulim, sans-serif;}
+
+/* 요소 선택자 */
+h1 {color: brown; text-align: center;}
+p {color: gray; text-align: center;}
+
+/* 클래스 선택자 */
+.special {color: orangered; font-weight: bold;}
+
+/* 자손 선택자 */
+li em {color: purple; font-style: normal;}
