@@ -1,0 +1,41 @@
+<!-- HTML문서 선언 -->
+<!DOCTYPE html>
+<!-- 문서시작, 한국어 페이지 -->
+<html lang="ko">
+    <!-- 화면에 보이지 않는 칸 -->
+    <head>
+        <meta charset="UTF-8">  <!-- 한글 깨지지 않도록 -->
+        <title>시멘틱 구조</title> <!-- 브라우저 탭 이름 -->
+    </head>
+    <!-- 화면에 보이는 내용 칸 -->
+    <body>
+        <header>
+            <h1>시멘틱 구조</h1>
+            <nav>홈 | 소개 | 연락처 </nav>
+        </header>
+        <main>
+            <section>
+                <article> <!-- 완결된 글 하나 -->
+                    첫 번째 글 내용
+                </article>
+            </section>
+        </main>
+        <aside> <!-- 본문 옆 보조 내용 -->
+            곁다리 정보(사이드 바)
+        </aside>
+        <footer>
+            2026 내 사이트
+        </footer>
+    </body>
+</html>
+<!-- 
+div는 뜻이 없는 빈 상자
+시맨틱 태그는 이름만 봐도 무슨 구역인지 드러남
+핵심 : header, nav, main, section, article, aside, footer
+• <nav> = 메뉴·길 안내 모음
+• <section> = 한 주제로 묶인 덩어리
+• <article> = 그 자체로 완결된 글(글·뉴스·카드)
+• <aside> = 본문 곁다리(사이드바·광고)
+
+왜 쓰나 — 검색엔진·화면낭독기가 구조를 이해 → SEO·접근성에 유리 (div보다 똑똑한 칸 나누기)
+-->

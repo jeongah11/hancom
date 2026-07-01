@@ -1,0 +1,79 @@
+<!-- HTML문서 선언 -->
+<!DOCTYPE html>
+<!-- 문서 시작, 한국어 페이지 -->
+<html lang="ko">
+    <!-- 화면에 보이지 않는 칸 -->
+    <head>
+        <meta charset="UTF-8">  <!-- 한글 깨지지 않도록 -->
+        <title>표 만들기</title> <!-- 브라우저 탭 이름 -->
+    </head>
+    <!-- 화면에 보이는 내용 칸 -->
+    <body>
+        <table border="1">
+            <tr>
+                <!-- tr : 가로 한줄, th : 제목 칸 -->
+                <th>요일</th>
+                <th>내용</th>
+                <th>시간</th>
+            </tr>
+            <!-- td : 보통 내용 칸 -->
+            <tr>
+                <td>월</td>
+                <td>HTML</td>
+                <td>7h</td>
+            </tr>
+            <tr>
+                <td>화</td>
+                <td>HTML</td>
+                <td>7h</td>
+            </tr>
+        </table>
+        <table>
+            <caption>표 제목</caption>
+            <thead>
+                <tr><th>제목</th><th>제목</th><th>제목</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>내용</td><td>내용</td><td>내용</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><td>합</td><td>합</td><td>합</td></tr>
+            </tfoot>
+        </table>
+
+        <table>
+            <caption>우리 팀 캐릭터 스탯</caption>
+            <thead>
+                <tr><th scope="col">이름</th><th scope="col">공격력</th><th scope="col">방어력</th></tr>
+            </thead>
+            <tbody>
+                <tr><th scope="row">전사</th><td>90</td><td>80</td></tr>
+                <tr><th scope="row">마법사</th><td>100</td><td>30</td></tr>
+                <tr><th scope="row">힐러</th><td>20</td><td>60</td></tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+<!-- 
+- <table> 요약
+<table>은 행과 열로 구성된 2차원 표 형태의 데이터를 나타내는 태그예요.
+핵심 구성 요소
+
+<caption> — 표 제목/요약
+<thead> — 머리글 영역
+<tbody> — 본문 데이터
+<tfoot> — 푸터(합계 등)
+<tr> — 행 (row)
+<th> — 헤더 셀, <td> — 데이터 셀
+
+- 중요 속성
+
+scope="col" / scope="row" — 헤더가 열/행 중 어디를 설명하는지 명시 (접근성에 중요!)
+colspan / rowspan — 셀을 여러 열/행에 걸쳐 병합
+
+- 접근성 팁
+
+<caption>으로 표 목적을 설명하면 스크린리더 사용자에게 큰 도움이 돼요
+복잡한 표는 가능하면 작은 표들로 쪼개는 게 좋음
+border, bgcolor, cellpadding 같은 속성은 deprecated → CSS로 대체해야 함
+-->
