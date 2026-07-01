@@ -1,0 +1,196 @@
+<!-- 
+1. 32_README.md 파일 형식 정리
+2. 33_README.md 파일 클로드 코드 설치 정리
+3. 34_index.html 미니 프로젝트 : 지금까지 배운 태그 활용하여 웹 사이트 구축 후 깃허브 업데이트
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김정아의 포트폴리오</title>
+</head>
+<body id="top">
+    <header>
+        <h1>김정아의 포트폴리오</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">자기소개</a></li>
+                <li><a href="#career">이력</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certificates">자격증</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside>
+        <h2>Follow</h2>
+        <ul>
+            <li><a href="https://github.com/jeongah11/hancom/">GitHub</a></li>
+            <li><a href="https://jeongah11.tistory.com/">Blog</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <!-- 자기소개 영역 -->
+        <section id="about">
+            <h2>자기소개</h2>
+            <article>
+                <img src="image_3.jpg" alt="사진" width="300">
+                <p>
+                    안녕하세요. 웹 프론트엔드 개발자 입니다.<br>
+                    <em>사용자 경험을 중시</em>하고, <mark>깔끔하고 반응성 좋은 웹 인터페이스</mark>를 만드는 것을 좋아합니다.<br>
+                    HTML, CSS, JavaScript를 기반으로 React 등 최신 기술을 활용해<br>
+                    웹사이트와 웹 애플리케이션을 개발하고 있습니다.
+                </p>
+            </article>
+        </section>
+        <!-- 이력 영역 -->
+        <section id="career">
+            <h2>이력</h2>
+            <article>
+                <ul>
+                    <li>
+                        <h3>회사명</h3>
+                        <p>직책 · 기간 (2024.01 ~ 현재)</p>
+                        <p>주요 업무 설명</p>
+                    </li>
+                    <li>
+                        <h3>회사명</h3>
+                        <p>직책 · 기간 (2023.06 ~ 2023.12)</p>
+                        <p>주요 업무 설명</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <!-- Skills 영역 -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <article>
+                <h3>Frontend</h3>
+                <ul>
+                    <li>HTML5, CSS3, JavaScript</li>
+                    <li>React</li>
+                </ul>
+
+                <h3>Tools</h3>
+                <ul>
+                    <li>Git, GitHub</li>
+                    <li>VS Code</li>
+                </ul>
+            </article>
+        </section>
+        <!-- 자격증 영역 -->
+        <section id="certificates">
+            <h2>자격증</h2>
+            <article>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th scope="col">자격증명</th>
+                            <th scope="col">발급기관</th>
+                            <th scope="col">취득 날짜</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>웹디자인 기능사</td>
+                            <td>한국산업인력공단</td>
+                            <td>2023.01</td>
+                        </tr>
+                        <tr>
+                            <td>정보처리기사</td>
+                            <td>한국산업인력공단</td>
+                            <td>2023.01</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <!-- Projects 영역 -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <article>
+                <ul>
+                    <li>
+                        <details name="proj">
+                            <summary>프로젝트1</summary>
+                            <p>프로젝트1 상세설명.....</p>
+                        </details>
+                    </li>
+                    <li>
+                        <details name="proj">
+                            <summary>프로젝트2</summary>
+                            <p>프로젝트2 상세설명.....</p>
+                        </details>
+                    </li>
+                    <li>
+                        <details name="proj">
+                            <summary>프로젝트3</summary>
+                            <p>프로젝트3 상세설명.....</p>
+                        </details>
+                    </li>
+                    <li>
+                        <details name="proj">
+                            <summary>프로젝트4</summary>
+                            <p>프로젝트4 상세설명.....</p>
+                        </details>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <!-- Contact 영역 -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <article>
+                <form method="post">
+                    <fieldset>
+                        <legend>메일 보내기</legend>
+                        <ul>
+                            <li>
+                                <label>이름 : </label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label>이메일 : </label>
+                                <input type="email">
+                            </li>
+                            <li>
+                                <label>전화번호 : </label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label>문의유형 : </label>
+                                <select>
+                                    <option>프로젝트 제안</option>
+                                    <option>협업 제의</option>
+                                    <option>기타 문의</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label>제목 : </label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label>메시지</label>
+                                <br>
+                                <textarea cols="50" rows="10" placeholder="어떤 내용으로 연락하고 싶으신가요?"></textarea>
+                            </li>
+                        </ul>
+                        <button type="submit">전송</button>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <address>abc@email.com</address>
+        <p>&copy; 2026 김정아. All rights reserved.</p>
+        <p>Last updated: 2026.07.01</p>
+        <a href="#top">맨 위로 이동</a>
+    </footer>
+</body>
+</html>
