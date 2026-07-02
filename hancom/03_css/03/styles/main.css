@@ -1,0 +1,28 @@
+/* 
+- Node.js 설치 중 npm 버전이 확인이 안됨
+- 아래 명령어 터미널에서 입력하여 해결
+- Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+- 파워셸 권한 문제(실행 정책 문제)
+
+StyleLint 설치
+- 터미널에서 npm install -D stylelint stylelint-config-standard stylelint-order 입력
+StyleLint 설정
+- 터미널에서 notepad ./.stylelintrc.json 입력
+- 아래 내용 입력
+{
+  "extends": ["stylelint-config-standard"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "order/properties-alphabetical-order": true
+  }
+}
+StyleLint 실행
+- npx stylelint "styles/main.css" --fix
+ */
+.box {
+    background-color: hotpink;
+    border-radius: 16px;
+    color: white;
+    height: 120px;
+    width: 120px;
+}

@@ -1,0 +1,82 @@
+/*  페이지를 일부러 길게 만들어서 스크롤 생성 => fixed, sticky 동작 확인용 */
+body {
+    min-height: 1500px;
+}
+
+/* 부모 박스 : position : relative */
+.parent {
+    position: relative; /* 기준이 되는 부모 */
+    border: 1px dashed red;
+    border-radius: 8px;
+    height: 120px;
+    background-color: rgb(255, 238, 206);
+    margin: 10px 0
+}
+
+/* relative : 원래 자리 기준으로 이동 */
+.ptag {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    color: purple;
+    font-weight: bold;
+}
+
+.rel {
+    position: relative;
+    top: 30px;
+    left: 20px;
+    width: 90%;
+    padding: 8px;
+    background: rgb(144, 221, 195);
+    border-radius: 6px;
+    font-weight: bold;
+    color: rgb(8, 66, 47);
+    z-index: 15;
+}
+
+.abs {
+    position: absolute;
+    background: rgb(158, 27, 49);
+    color: antiquewhite;
+    padding: 10px;
+    bottom: 50px;
+    right: 10px;
+    z-index: 10;
+    border-radius: 6px;
+}
+
+/* fixed : 화면 고정 - 스크롤해도 그 자리 */
+/* 
+주의할점
+- 조상 중에 transform, filter, perspective가 있으면 뷰포트 고정이 깨지고 그 조상 기준으로 바뀜
+- 모바일에서 키보드 올라오면 fixed 위치가 밀리는 현상 있음
+*/
+.fixed {
+    position: fixed;
+    background: rgb(88, 79, 224);
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    bottom: 16px;
+    right: 16px;
+    padding: 10px;
+}
+
+/* sticky : 스크롤하다 top:0 지점에 닿으면 상단에 착 붙음 */
+/*
+주의할점
+- top / bottom 값을 반드시 지정해야 동작함 (없으면 relative랑 똑같음)
+- 조상 중에 overflow: hidden / scroll / auto가 있으면 sticky가 그 안에서만 동작하거나 아예 안 붙음
+- 부모 높이보다 sticky 요소가 크면 고정 안 됨
+*/
+.sticky {
+    position: sticky;
+    top: 0;
+    margin: 10px 0;
+    padding: 8px 12px;
+    background: rgb(83, 216, 149);
+    color: blanchedalmond;
+    font-weight: bold;
+    border-radius: 6px;
+}

@@ -1,0 +1,22 @@
+.grid {
+    display: grid; /* 2차원 격자 켜기 */
+    grid-template-columns: repeat(3, 1fr); /* 3칸 똑같은 너비 (1fr 1fr 1fr 과 같음) */
+    gap: 12px;
+}
+
+.card {
+    background: rgb(255, 132, 214);
+    color: aliceblue;
+    text-align: center;
+    padding: 22px 0;
+    border-radius: 8px;
+}
+
+/* 
+1fr이 뭔가요? — fr = fraction(분수) — px 같은 고정 크기 아니라 남은 공간을 나눠 갖는 비율 단위
+• repeat(3, 1fr) = 1fr 1fr 1fr — 남은 공간 3등분 → 3칸 똑같이
+• 1fr 2fr 1fr — 1:2:1 비율, 가운데 칸만 2배 넓게
+• 200px 1fr — 200px 먼저 떼고 남은 공간 전부를 1fr이 차지 (사이드바 고정 + 본문 가변)
+
+왜 % 대신 fr? — %는 gap 간격까지 계산에 넣어 합이 넘쳐 줄바꿈 꼬임 — fr은 gap 먼저 뺀 뒤 남은 폭만 나눠 깔끔 → 격자엔 fr 권장
+*/

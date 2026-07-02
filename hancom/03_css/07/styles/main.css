@@ -1,0 +1,25 @@
+/* 방문 전 */
+a:link {
+    color: rgb(255, 0, 191);
+}
+
+/* 방문 후 */
+a:visited {
+    color: rgb(109, 29, 29);
+}
+
+/* 마우스 올렸을 때 */
+a:hover {
+    color: red;
+}
+
+/* 누르는 중 */
+a:active {
+    color: aquamarine;
+}
+
+/* 
+링크 4가지 상태는 반드시 이 순서로 써야 함 — 순서 틀리면 뒤 규칙에 덮여서 색이 안 바뀜
+• :link → :visited → :hover → :active
+• 앞글자 따서 L-V-H-A, "러브하(LoVe-HAte)"로 외움
+*/

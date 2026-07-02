@@ -1,0 +1,39 @@
+.box {
+    border: 2px solid;
+    width: 400px;
+    height: 120px;
+    display: flex; /* 글자를 가운데 두기 위한 준비 */
+    align-items: center; /* 세로 가운데 정렬 */
+    justify-content: center; /* 가로 가운데 정렬 */
+    background-color: hotpink;
+    color: white;
+    border-radius: 16px;
+    transition: transform 0.5s ease-out;
+    margin: 200px;
+}
+.box:hover {
+    transform: rotate(80deg) scale(1.2);
+}
+
+.box2 {
+    height: 400px;
+    background-color: cornflowerblue;
+}
+.box2:hover {
+    transform: rotate(-2s80deg) scale(2);
+}
+
+/* 
+ease : 느→빠→느 · 기본값, 가장 자연스러움
+linear : 처음부터 끝까지 일정 · 기계적 (로딩 바)
+ease-in : 느리게 시작 → 끝 빠르게 (점점 빨라짐)
+ease-out : 빠르게 시작 → 끝 느리게 (점점 느려짐)
+ease-in-out : 양끝 느리게 · ease보다 더 부드러움
+ - 자연스러운 UI엔 보통 ease·ease-out — 로딩 바처럼 일정해야 하면 linear
+
+#Claude
+/model
+/effort
+esc 두 번 누르면 이전 세션으로 복구 가능
+계획 먼저 잡고, 나에게 질문해달라고 요청하기
+*/
